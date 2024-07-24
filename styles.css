@@ -318,7 +318,7 @@ section {
 .notion-grid {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
     gap: 20px;
 }
 
