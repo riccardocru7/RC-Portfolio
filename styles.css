@@ -531,7 +531,7 @@ footer p {
 
     .notion-grid {
         flex-direction: column;
-        align-items: center;
+        
     }
 
     .notion-card {
