@@ -316,16 +316,15 @@ section {
 
 /*Nozioni*/
 .notion-grid {
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
 .notion-card {
     background: rgba(7, 100, 72, 0.9);
     padding: 20px;
-    border-radius: 40px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(33.333% - 2rem);
     max-width: calc(33.333% - 2rem);
@@ -538,25 +537,6 @@ footer p {
         width: 90%;
     }
 
-
-
-    section {
-        
-        text-align: center;
-        background: rgba(255, 255, 255, 0.8);
-        margin-bottom: 2rem;
-        background: none;
-       
-    }
-    .notion-card {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    form input, form textarea {
-        width: 90%;
-    }
-
     section {
         padding: 0;
         text-align: center;
@@ -564,27 +544,30 @@ footer p {
         background: none;
     }
 
-   .cv-image {
-        margin-bottom: 50x;
+    .cv-image {
+        margin-bottom: 50px;
     }
     
+    footer {
+        background: none;
+        color: white;
+        text-align: center;
+        padding: 0;
+    }
+}
 
-footer {
-    background:none;
-    color: white;
-    text-align: center;
-    padding: 0px;
+@media (max-width: 767px) {
+    .notion-grid {
+        grid-template-columns: 1fr;
+    }
 }
-    
-}
+
 @media (max-width: 1024px) {
     .home-button {
         margin-top: 1rem; 
-        
+    }
 
     main {
         padding-top: 2rem;
     }
 }
-
-
