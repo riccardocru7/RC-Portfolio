@@ -364,8 +364,8 @@ section {
 }
 
 .progress-bar {
-    background-color: #000000;
-    border-radius: 10px;
+    background-color: #888383;
+    border-radius: 0 10px 10px 0;
     overflow: hidden;
     position: relative;
     height: 28px;
