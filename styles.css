@@ -529,6 +529,11 @@ footer p {
         margin: 0.5rem 0;
     }
 
+    .notion-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .notion-card {
         flex: 1 1 100%;
         max-width: 100%;
@@ -557,11 +562,7 @@ footer p {
     }
 }
 
-@media (max-width: 767px) {
-    .notion-grid {
-        grid-template-columns: 1fr;
-    }
-}
+
 
 @media (max-width: 1024px) {
     .home-button {
