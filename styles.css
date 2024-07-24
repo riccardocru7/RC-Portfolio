@@ -316,8 +316,8 @@ section {
 
 /*Nozioni*/
 .notion-grid {
-    display: grid;
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
     gap: 20px;
 }
 
