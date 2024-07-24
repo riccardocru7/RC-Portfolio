@@ -530,7 +530,8 @@ footer p {
     }
 
     .notion-grid {
-        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
         
     }
 
