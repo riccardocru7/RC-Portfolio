@@ -374,7 +374,6 @@ section {
 
 .progress {
     background:linear-gradient(120deg, #076448, #00b4db);
-    background-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     padding: 0.5rem;
     text-align: center;
