@@ -364,7 +364,7 @@ section {
 }
 
 .progress-bar {
-    background-color: #928e8e;
+    background-color: #000000;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -374,7 +374,7 @@ section {
 
 .progress {
     background:linear-gradient(120deg, #076448, #00b4db);
-    color: rgb(184, 26, 26);
+    color: rgb(255, 255, 255);
     padding: 0.5rem;
     text-align: center;
     border-radius: 0 10px 10px 0;
