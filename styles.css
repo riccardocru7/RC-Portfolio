@@ -51,15 +51,21 @@ header .profile-img {
         align-items: center;
         justify-content: center;
 }
+
+#menu-toggle {
+    display: none;
+}
+
 .hamburger-menu {
     display: none;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
 }
 nav ul {
     list-style:none;
     display: flex;
+    list-style-type: none;
     justify-content: center;
     padding: 0;
     margin: 1rem 0 0 0;
@@ -77,6 +83,10 @@ nav a {
     padding: 0.5rem 1rem;
     border-radius: 80px;
     transition: background-color 0.5s;
+}
+
+nav ul.show {
+    display: block;
 }
 
 nav a:hover {
@@ -532,12 +542,13 @@ footer p {
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
-        top: 100%;
+        top: 60px;
         left: 0;
         right: 0;
         padding: 0;
         margin: 0;
         z-index: 1;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     nav ul.show {
@@ -550,7 +561,9 @@ footer p {
         margin:0;
         text-align: center;
     }
-
+    #menu-toggle:checked + label + header nav ul {
+        display: block;
+    }
 
     .notion-grid {
         flex-wrap:wrap;
@@ -559,12 +572,26 @@ footer p {
     }
     .hamburger-menu {
         display: block;
+        
     }
 
     main {
-        padding-top: 200px; 
+        padding-top: 60px; 
         
     }
+
+    #menu-toggle {
+        display: none;
+    }
+    
+    #menu-toggle:checked + nav ul {
+        display: flex;
+    }
+   
+    #menu-toggle:checked ~ main {
+        margin-top: 200px; 
+    }
+}
     .notion-card {
         flex: 1 1 100%;
         max-width: 100%;
