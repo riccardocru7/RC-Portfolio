@@ -51,7 +51,12 @@ header .profile-img {
         align-items: center;
         justify-content: center;
 }
-
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
 nav ul {
     list-style:none;
     display: flex;
@@ -523,11 +528,26 @@ footer p {
     }
 
     nav ul {
+        display: none;
         flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+
+
     }
 
     nav li {
-        margin: 0.5rem 0;
+        margin:0;
+        text-align: center;
     }
 
     .notion-grid {
@@ -535,7 +555,9 @@ footer p {
         justify-content: center;
         
     }
-
+    .hamburger-menu {
+        display: block;
+    }
     .notion-card {
         flex: 1 1 100%;
         max-width: 100%;
