@@ -52,6 +52,20 @@ header .profile-img {
         justify-content: center;
 }
 
+nav input[type="checkbox"] {
+    display: none;
+
+
+nav {
+    position: relative;
+}
+nav .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
 
 nav ul {
     list-style:none;
@@ -527,6 +541,19 @@ footer p {
         width: 100px;
         height: 100px;
     }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
 
     nav ul {
         display: none;
@@ -542,11 +569,16 @@ footer p {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    nav ul.show {
-        display: flex;
-
-
+    nav a {
+        display: block;
+        margin: 1rem 0;
     }
+
+    nav input[type="checkbox"]:checked + .menu-icon + ul {
+        display: block;
+    }
+
+    
 
     nav li {
         margin:0;
