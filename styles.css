@@ -42,18 +42,49 @@ header {
 }
 
 
-header .profile-img {
+/*about container*/
 
-        width: 230px;
-        height: 230px;
-        border-radius: 50%;
+.about-container {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    gap: 20px; 
+    align-items: center;
+}
+
+.about-container > div {
+    max-width: 900px; 
+}
+
+h2, h3, p {
+    margin: 0 0 10px 0; 
+}
+
+
+
+
+
+
+
+/*Profile Image*/
+
+.profile-img {
+
+        width: 400px;
+        height: 500px;
+        border-radius: none;
         margin: 1rem 0;
         align-items: center;
         justify-content: center;
 }
+
+
 /*Nav*/
 
-
+nav {
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
 
 nav ul {
     position: relative;
@@ -61,10 +92,12 @@ nav ul {
     justify-content: center;
     padding: 0;
     margin: 1rem 0 0 0;
+    list-style-type: none;
 }
 
 nav li {
     margin: 0 1rem;
+    text-emphasis: none;
 }
 
 nav a {
@@ -81,6 +114,16 @@ nav a {
 
 nav a:hover {
     background-color: #074866;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1eeee;
+    font-weight: bold;
 }
 
 main {
@@ -131,7 +174,7 @@ section {
     background:none;
 }
 
-    #about {
+#about {
     padding: 0px;
     background:none;
     margin-bottom: 2rem;
@@ -143,9 +186,7 @@ section {
     text-align: left;
    justify-content: center;
    color: rgb(235, 243, 243);
-    
 }
-
 
 .cv-button-container {
     
@@ -516,6 +557,22 @@ footer p {
 
 
 /* Media Queries */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+
+
 
 @media (max-width: 768px) {
     header h1 {
@@ -527,29 +584,42 @@ footer p {
         height: 100px;
     }
     nav ul {
-        display: none;
+        display: flex;
         flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color:none;
+        width: 100%;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-out;
+    }
+
+    nav ul li {
+        margin: 10px 0;
         text-align: center;
     }
 
-    nav ul.show {
-        display: block;
+    .menu-toggle {
+        display: none;
     }
 
-    nav .menu-icon {
+    .menu-icon {
         display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin: 10px;
     }
 
-    
-
-    nav a {
-        display: block;
-        margin: 1rem 0;
+    #menu-toggle:checked + .menu-icon + nav ul {
+        max-height: 300px;
+        display: flex;
     }
 
-    nav input[type="checkbox"]:checked + .menu-icon + ul {
-        display: block;
-    }
+
+
 
     
 
@@ -564,18 +634,14 @@ footer p {
         justify-content: center;
         
     }
-    .hamburger-menu {
-        display: block;
-        
-    }
-
+    
     main {
         padding-top: 60px; 
         
     }
 
     
-}
+
     .notion-card {
         flex: 1 1 100%;
         max-width: 100%;
