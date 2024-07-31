@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ece8e8;
+    color: #ffffff;
     background: url('images/sfondo.jpg') no-repeat center center fixed;
     background-size: cover;
 }
@@ -122,7 +122,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #f1eeee;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -185,7 +185,7 @@ section {
     margin-right: 50px;
     text-align: left;
    justify-content: center;
-   color: rgb(235, 243, 243);
+   color: rgb(255, 255, 255);
 }
 
 .cv-button-container {
@@ -579,47 +579,83 @@ footer p {
         font-size: 2.5rem;
     }
 
-    header .profile-img {
-        width: 100px;
-        height: 100px;
-    }
+   
     nav ul {
-        display: flex;
+        display:grid;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
+        position:relative;
+        top: 10px;
         right: 0;
         background-color:none;
         width: 100%;
-        border: 1px solid #ddd;
+        border: none;
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.3s ease-out;
     }
 
     nav ul li {
-        margin: 10px 0;
-        text-align: center;
+        margin: 5px 2px;
+        margin-top: 5px;
+        
     }
-
-    .menu-toggle {
-        display: none;
+    nav a {
+        font-size: 1.2rem; 
+        padding: 0.5rem; 
+        display: block;
+        
     }
+    nav {
+        transition: all 0.3s ease;
+    }
+    
+    
 
     .menu-icon {
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
+        display:block;
+        font-size: 3rem;
+        color:rgb(3, 95, 95);
+        cursor:pointer;
         margin: 10px;
+        padding:1rem;
     }
 
     #menu-toggle:checked + .menu-icon + nav ul {
         max-height: 300px;
-        display: flex;
+        display:flex;
+        opacity: 1;
+    
+        
     }
 
+    #menu-toggle {
+        display: none;
+    }
+    
 
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -70px;
+        
+    }
 
+    #header-title {
+        font-size: 4rem;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 300px;
+        
+        
+    }
+
+    .about-container > div {
+        max-width: 100%;
+        text-align: center;
+    }
 
     
 
