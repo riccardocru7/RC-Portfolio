@@ -66,17 +66,18 @@ h2, h3, p {
     color: f5f5f5;
 }
 h2 {
-    font-size: 1.5rem; /* Aumenta la dimensione del font per i titoli */
+    font-size: 2rem; /* Aumenta la dimensione del font per i titoli */
     font-weight: bold;
 }
 
 h3 {
-    font-size: 1.25rem; /* Adatta la dimensione per i sottotitoli */
+    font-size: 2rem; /* Adatta la dimensione per i sottotitoli */
     font-weight: bold;
+    margin: 0 0 12px 0;
 }
 
 p {
-    font-size: 1rem; /* Mantieni una dimensione leggibile per il testo */
+    font-size: 1.125rem; /* Mantieni una dimensione leggibile per il testo */
 }
 
 
