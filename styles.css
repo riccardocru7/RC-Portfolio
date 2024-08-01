@@ -19,7 +19,7 @@ body {
 
 header {
     background: none;
-    color: #04723f;
+    color: #ffffff;
     padding: 1rem 0;
     position: relative;
     width: 100%;
@@ -33,7 +33,7 @@ header {
     font-family: 'Audiowide', sans-serif;
     font-size: 4rem;
     font-weight: normal;
-    color:  #07d1a5;
+    color:  #ffffff;
     text-align: center;
     margin: 0;
 
@@ -48,11 +48,15 @@ header {
     display: grid;
     grid-template-columns: auto 1fr; 
     gap: 20px; 
+    background: rgba(0, 0, 0, 0.6);
     align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .about-container > div {
     max-width: 900px; 
+    color: #ffffff;
 }
 
 h2, h3, p {
@@ -102,7 +106,7 @@ nav li {
 
 nav a {
     background:none;
-    color: white;
+    color: #07d1a5;
     text-decoration: none;
     font-size: 1.7rem;
     padding: 0.5rem 1rem;
@@ -122,7 +126,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #07d1a5;
     font-weight: bold;
 }
 
@@ -159,7 +163,7 @@ main {
     bottom: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(to right, #04723f, #07d1a5);
+    background: linear-gradient(to right,#07d1a5, #04723f );
 }
 
 section {
@@ -196,7 +200,7 @@ section {
 .cv-button {
     display: inline-block;
     padding: 0.75rem 2rem;
-    background: linear-gradient(135deg, #04767e, #a60cb4);
+    background: linear-gradient(135deg, #04767e, #03362e);
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -288,7 +292,6 @@ section {
     text-align: center;
     padding: 0.75rem 2rem;
     margin: 1rem auto 0;
-
     background: linear-gradient(135deg, #04767e, #03362e);
     color: rgb(252, 248, 248);
     text-decoration:none;  
@@ -370,6 +373,7 @@ section {
 
 .notion-card {
     background: rgba(7, 100, 72, 0.9);
+    color: #ffffff
     padding: 20px;
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -407,6 +411,7 @@ section {
 .skill h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: #07d1a5
 }
 
 .progress-bar {
@@ -441,20 +446,24 @@ form {
 
 form label {
     font-size: 1.5rem;
+    color: #07d1a5
 }
+
 
 form input, form textarea {
     width: 100%;
     max-width: 500px;
     padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.6);
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1.2rem;
+    color: #ffffff
 }
 
 form button {
     padding: 0.5rem 1rem;
-    background-color: #035528;
+    background-color: #07d1a5;
     color: white;
     border: none;
     border-radius: 4px;
@@ -507,7 +516,7 @@ form button:hover {
     bottom: 20px;
     right: 10px;
     padding: 10px 15px;
-    background-color: #014433;
+    background-color: #07d1a5;
     color: white;
     border-radius: 50%;
     text-align: center;
@@ -527,7 +536,7 @@ form button:hover {
 
 /*Footer*/
 footer {
-    background-color: #aaa2a2; 
+    background-color: rgba(194, 162, 162, 0.082); 
     color: rgb(255, 252, 252);
     text-align: center;
     padding: 10px 0;
