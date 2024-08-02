@@ -77,12 +77,33 @@ h3 {
 }
 
 p {
-    font-size: 1.125rem; /* Mantieni una dimensione leggibile per il testo */
+    font-size: 1.3rem; /* Mantieni una dimensione leggibile per il testo */
 }
 
 
 
+/*more about*/
 
+#more-about-me {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #000000;
+    border-radius: 8px;
+    
+}
+
+#more-about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#more-about-me p {
+    font-size: 1.3rem;
+    line-height: 1.1;
+    
+    text-align: left;
+    
+}
 
 
 
