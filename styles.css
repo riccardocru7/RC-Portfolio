@@ -89,7 +89,9 @@ p {
     padding: 2rem;
     background-color: #000000;
     border-radius: 8px;
-    
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 1200%;
 }
 
 #more-about-me h2 {
@@ -100,6 +102,11 @@ p {
 #more-about-me p {
     font-size: 1.3rem;
     line-height: 1.1;
+    margin-bottom: 1rem;
+    max-width: 1200%;
+    width: 100%;
+    
+    
     
     text-align: left;
     
