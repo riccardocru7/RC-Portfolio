@@ -86,30 +86,34 @@ p {
 /*more about*/
 
 #more-about-me {
-    margin: 2rem 0;
-    padding: 2rem;
-    background-color: #000000;
-    border-radius: 8px;
-    box-sizing: border-box;
-    width: 90%;
-    max-width: 1200%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #ffffff; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    max-width: 1000px; 
+    margin: 2rem 0; 
+    text-align: left; 
+    position: relative;
+    
+    
+
 }
 
 #more-about-me h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-align: left;
 }
 
 #more-about-me p {
-    font-size: 1.3rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
-    max-width: 1200%;
-    width: 100%;
     
-    
-    
-    text-align: left;
+        font-size: 1.3rem; 
+        line-height: 1.6; 
+        margin-bottom: 1rem; 
+        color: #f0f0f0; 
+        
     
 }
 
@@ -288,13 +292,8 @@ section {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-#cv-header h1 {
-    
-    font-family: 'Audiowide', sans-serif;
-    font-size: 4rem;
-    color: #07d1a5;
-    margin: 0;
-}
+        
+
 .cv-image{
     
     width: 100%;
@@ -316,20 +315,37 @@ section {
     flex-direction: column;
 
 }
+#cv-header h1 {
 
-#cv-header {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    color:  #f0f0f0;
     text-align: center;
-    color:#07d1a5 ;
-    text-align: center;
-    margin-top: 20px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
 }
+
+
 
 .cv-download a {
     margin-bottom: 20px; 
+    display:inline-block;
+    text-align: center;
+    padding: 0.75rem 2rem;
+    margin: 1rem auto 0;
+    background: linear-gradient(135deg, #00b4db, #04767e);
+    color: rgb(252, 248, 248);
+    text-decoration:none;  
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
 }
+
 
 /*Home Button*/
 
@@ -400,7 +416,6 @@ section {
 #fullstack-thoughts h2 {
     font-size: 2rem; 
     margin-bottom: 1rem; 
-    color: #07d1a5
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
@@ -827,6 +842,22 @@ footer p {
     }
     
 
+    #more-about-me, #fullstack-thoughts {
+        max-width: 100%;
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+
+   
+    #more-about-me h2, #fullstack-thoughts h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #more-about-me p, #fullstack-thoughts p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
 
     #newsletter {
         padding: 15px; 
