@@ -432,11 +432,15 @@ section {
 }
 
 #notions h2 {
-    font-size: 2rem; 
-    font-weight: bold;
-    color: #07d1a5; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-    margin-bottom: 1rem; 
+    font-size: 2.5rem; /* Dimensione del font */
+    font-weight: bold; /* Grassetto per maggiore enfasi */
+    color: #ffffff; /* Colore del testo chiaro per un forte contrasto */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); /* Ombra del testo più evidente */
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente per migliorare la leggibilità */
+    padding: 10px; /* Padding per spazio interno */
+    border-radius: 8px; /* Bordo arrotondato per estetica */
+    display: inline-block; /* Perché il padding e il background abbiano effetto solo sul testo */
+    margin-bottom: 1rem; /* Margine inferiore */
 }
 .notion-card:hover {
     transform: translateY(-5px);
