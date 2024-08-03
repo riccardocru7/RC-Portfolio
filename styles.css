@@ -571,17 +571,22 @@ form button:hover {
 
 /*Newsletter*/
 
+/*Newsletter*/
+
 #newsletter {
     padding: 20px;
-    border: 2px solid #b4acac; 
+    border: 2px solid #07d1a5; /* Cambiato il colore del bordo per un contrasto migliore */
     border-radius: 5px;
-    display: flexbox; 
+    background-color: #333; /* Sfondo scuro per contrasto */
+    color: #fff; /* Colore del testo chiaro per contrastare con lo sfondo scuro */
+    display: flex;
+    flex-direction: column; /* Cambiato flexbox in flex-direction per migliorare l'impaginazione */
     align-items: center;
-    background-color: transparent; 
 }
 
 #newsletter h2 {
     margin-bottom: 10px;
+    color: #fff; /* Colore del testo del titolo */
 }
 
 #newsletter form {
@@ -593,12 +598,26 @@ form button:hover {
 #newsletter input[type="email"] {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #07d1a5; /* Colore del bordo input per contrastare con lo sfondo */
     border-radius: 5px;
+    background-color: #fff; /* Sfondo chiaro per l'input */
+    color: #333; /* Colore del testo dell'input */
 }
 
 #newsletter button {
-    align-self: center;
+    padding: 0.5rem 1rem;
+    background-color: #00b4db;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+}
+
+
+#newsletter button:hover {
+    background-color: #0056b3; /* Colore di sfondo del bottone al passaggio del mouse */
 }
 
 
