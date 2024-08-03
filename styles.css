@@ -432,7 +432,7 @@ section {
 }
 
 #notions h2 {
-    font-size: 2.5rem; 
+    font-size: 2rem; 
     font-weight: bold; 
     color: #ffffff; 
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); 
@@ -495,6 +495,42 @@ section {
 
 /*Form*/
 
+#contact {
+    background: rgba(0, 0, 0, 0.8); /* Sfondo semi-trasparente scuro */
+    color: #ffffff; /* Testo bianco per un buon contrasto */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #07d1a5; /* Colore del titolo */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* Colore dei label */
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #07d1a5; /* Bordo verde chiaro */
+    border-radius: 5px;
+    background: #333; /* Sfondo scuro per i campi di input */
+    color: #ffffff; /* Colore del testo degli input */
+}
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -502,10 +538,6 @@ form {
     gap: 1rem;
 }
 
-form label {
-    font-size: 1.5rem;
-    color: #00b4db
-}
 
 
 form input, form textarea {
@@ -518,6 +550,8 @@ form input, form textarea {
     font-size: 1.2rem;
     color: #ffffff
 }
+
+
 
 form button {
     padding: 0.5rem 1rem;
