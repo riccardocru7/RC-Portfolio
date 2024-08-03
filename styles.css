@@ -433,7 +433,8 @@ section {
 
 #notions h2 {
     font-size: 2rem; 
-    color: #f0f0f0; 
+    font-weight: bold;
+    color: #07d1a5; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     margin-bottom: 1rem; 
 }
