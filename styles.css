@@ -627,21 +627,26 @@ form button:hover {
     bottom: 20px;
     right: 10px;
     padding: 10px 15px;
-    background-color: #00b4db;
-    color: white;
+    background-color: #007bff; /* Colore di sfondo più scuro per contrastare con il testo bianco */
+    color: #ffffff; /* Colore del testo bianco per un buon contrasto */
     border-radius: 50%;
     text-align: center;
     text-decoration: none;
     font-size: 2rem;
     z-index: 1000;
     display: block; 
-    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
 .scroll-to-top:hover {
-    background-color: #05395c;
+    background-color: #0056b3; /* Colore di sfondo più scuro al passaggio del mouse */
     transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Ombra leggermente più scura per effetto di profondità */
+}
+
+.scroll-to-top:active {
+    background-color: #004494; /* Colore di sfondo ancora più scuro quando il pulsante è cliccato */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombra ridotta per effetto di clic */
 }
 
 
