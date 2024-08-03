@@ -431,6 +431,12 @@ section {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+#notions h2 {
+    font-size: 2rem; 
+    color: #f0f0f0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    margin-bottom: 1rem; 
+}
 .notion-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
