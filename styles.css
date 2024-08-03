@@ -432,15 +432,15 @@ section {
 }
 
 #notions h2 {
-    font-size: 2.5rem; /* Dimensione del font */
-    font-weight: bold; /* Grassetto per maggiore enfasi */
-    color: #ffffff; /* Colore del testo chiaro per un forte contrasto */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); /* Ombra del testo più evidente */
-    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente per migliorare la leggibilità */
-    padding: 10px; /* Padding per spazio interno */
-    border-radius: 8px; /* Bordo arrotondato per estetica */
-    display: inline-block; /* Perché il padding e il background abbiano effetto solo sul testo */
-    margin-bottom: 1rem; /* Margine inferiore */
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: #ffffff; 
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 8px; 
+    display: inline-block; 
+    margin-bottom: 1rem; 
 }
 .notion-card:hover {
     transform: translateY(-5px);
@@ -455,27 +455,25 @@ section {
 /*Skills*/
 
 
-#skills{
-    background: none;
-    text-align: center;
-    padding: 2rem 0;
-    
+#skills {
+    background: rgba(0, 0, 0, 0.8); /* Sfondo scuro per migliorare il contrasto */
+    color: #ffffff; /* Testo bianco per contrasto */
+    padding: 2rem;
+    border-radius: 8px;
 }
+
 .skill {
     margin-bottom: 1.5rem;
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto 1.5rem auto;
 }
 
 .skill h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Dimensione del font leggibile */
     margin-bottom: 0.5rem;
-    color: #07d1a5
+    color: #07d1a5; /* Colore del titolo della skill */
 }
 
 .progress-bar {
-    background-color:rgb(255, 255, 255);
+    background: #f0f0f0;
     border-radius: 0 10px 10px 0;
     overflow: hidden;
     position: relative;
