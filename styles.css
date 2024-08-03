@@ -366,7 +366,7 @@ section {
 
 .home-button:hover::before {
     width: 400%;
-    height: 400%;
+    height: 400%;* 
     background: rgba(255, 255, 255, 0.2); 
 }
 
@@ -386,26 +386,29 @@ section {
 /*Pensiero FullStack*/
 
 #fullstack-thoughts {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.4rem; 
-    max-width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
-    
-    color: rgb(235, 243, 243);
-    text-align: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #f0f0f0; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    max-width: 1000px; 
+    margin: 2rem auto; 
+    text-align: left; 
 
 }
 
 #fullstack-thoughts h2 {
     font-size: 2rem; 
-    margin-bottom: 15px; 
-    color: rgb(235, 243, 243);
+    margin-bottom: 1rem; 
+    color: #07d1a5
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 #fullstack-thoughts p {
-    margin-bottom: 15px; 
+    font-size: 1.3rem; 
+    line-height: 1.6; 
+    margin-bottom: 1rem; 
+    color: #f0f0f0; 
 }
 
 
